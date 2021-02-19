@@ -1,4 +1,4 @@
-## This Script is used to capture the current logged on user in the Azure Cloud Shell and execute a command against the Azure AD Graph API. It does NOT require an Application Account or SP to be created.
+## This Script is used to capture the current logged on user in the Azure Cloud Shell and executes a REST API call against the Azure AD role definition Graph API. It does NOT require an Application Account or SP to be created in Azure AD.
 
 $resourceURI = "https://graph.microsoft.com/"
 $tokenAuthURI = "http://localhost:50342/oauth2/token?resource=$resourceURI&api-version=2019-08-01"
