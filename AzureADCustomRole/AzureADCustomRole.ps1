@@ -6,8 +6,8 @@ $tokenResponse = Invoke-RestMethod -Method Get -Headers @{"Metadata"="true"} -Ur
 $accessToken = $tokenResponse.access_token
 
 $templateId = (New-Guid).Guid
-$displayName = "Test AzureAD RBAC"
-$description = "Test AzureAD RBAC"
+$displayName = "Demo AzureAD RBAC"
+$description = "Demo AzureAD RBAC Description"
 
 $jsonPayload = @"
 {
@@ -37,3 +37,4 @@ $params = @{
 }
 
 Invoke-RestMethod @params
+ 
